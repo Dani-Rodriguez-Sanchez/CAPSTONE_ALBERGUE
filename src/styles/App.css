@@ -1,0 +1,227 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: rgb(163, 164, 164);
+  padding: 30px 30px 30px 250px;
+  
+}
+
+.logo {
+  height: 60px;
+  position: absolute;
+  left: 7px;
+  top: 7px;
+}
+
+.languageButtons {
+  position: absolute;
+  left: 80px;
+  top: 20px;
+  background-color: none; 
+}
+
+.boton-idioma {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.boton-idioma:hover {
+  color: rgb(200, 200, 155);
+}
+
+
+.presentacion {
+  height: 600px;
+  background-image: url(../images/difuminado.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.presentacion_logo_text {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;  
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  
+}
+
+.box_text_presentation {
+  margin: 30px;
+  line-height: 40px;
+  height: 250px;
+  width: 350px;
+  background-color: rgba(243, 109, 109, 0.344);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column; 
+  padding: 5px;
+}
+
+.logo_cranes {
+  height: 320px;
+  width: 320px; 
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.localizacion {
+  height: 600px;
+  
+}
+.texto-mapa {
+  margin: 0;
+  height: 50px;
+  padding: 0px;
+  background-color: 
+rgb(139, 105, 105);
+  color: 
+white;
+  text-align: center;
+}
+
+.texto-mapa > h1 {
+  padding: 7px;
+  margin: 0;
+}
+.servicios {
+    height: 450px;
+    background-image: linear-gradient(rgb(28, 28, 28), rgb(145, 145, 143));
+    color: rgb(255, 255, 255);
+}
+
+.services-icons {
+  display: flex;
+  flex-direction: row; 
+  padding: 100px; 
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  }
+
+
+
+.galeria {
+  height: 400px;
+  background-color: rgb(147, 93, 93);
+  padding: 28px;
+  top: 50%;
+  color: white;
+}
+
+.images-carousel {
+  height: 300px;
+}
+
+.titulos {
+  padding: 40px;
+}
+.articulo {
+  color: #1976d2
+  
+ 
+}
+
+.buttons {
+  background-color: lightgrey;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline;
+  font-size: 16px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+ }
+
+.buttons:hover {
+  background-color: #bfbf97;
+  color: white;
+}
+
+/* scroll to top button */
+.top-btn-position {
+  position: fixed;
+  z-index: 3;
+  bottom: 30px;
+  left: 30px;
+}
+
+.top-btn-style {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #333;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+}
+
+.top-btn-style:hover {
+  animation: none;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+
+
+
+
+@media (max-width: 768px){
+  .Navbar {
+    height: 280px;
+    padding: 15px 25px 15px 200px;
+  }
+  .buttons {
+    display: block;
+    font-size: 1.5rem;  
+  }
+  
+  .logo_cranes {
+    height: 250px;
+    width: 250px; 
+  }
+
+  .presentacion_logo_text {
+      flex-direction: column;  
+  }
+
+  .servicios {
+    height: 600px;
+    background-image: linear-gradient(rgb(28, 28, 28), rgb(105, 105, 104));
+    color: white;
+    font-size: 18px;
+    text-align: center
+  }
+
+  .services-icons {
+    display: flex;
+    flex-direction: column; 
+    padding: 40px; 
+    gap: 10px;
+    
+  }
+}
+
